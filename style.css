@@ -1,0 +1,127 @@
+/* General styles */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Container for the quiz app */
+.container {
+    background: linear-gradient(83deg, rgba(123, 132, 199, 1) 0%, rgba(26, 82, 154, 1) 35%, rgba(41, 53, 132, 1) 79%, rgba(23, 30, 168, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main app style */
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.app h1 {
+    font-size: 24px;
+    color: #001e4d;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+/* Quiz section */
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Button styles for answers */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background: #f4f4f4;
+    color: #001e4d;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #001e4d;
+    color: #fff;
+}
+
+.btn.correct {
+    background-color: #28a745; /* Green for correct answer */
+    color: white;
+    border-color: #28a745;
+}
+
+.btn.wrong {
+    background-color: #dc3545; /* Red for wrong answer */
+    color: white;
+    border-color: #dc3545;
+}
+
+/* Next button style */
+#nxt-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#nxt-btn.hide {
+    display: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .app {
+        width: 100%;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .quiz h2 {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 8px;
+    }
+
+    #nxt-btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
