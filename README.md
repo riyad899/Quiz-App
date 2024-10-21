@@ -2,7 +2,7 @@
 
 <p>Welcome to the <strong>Quiz App</strong>! This is a fun, interactive application where users can test their knowledge across different categories. 🎉</p>
 
-<p>🔗 <strong>Live Demo</strong>: <a href="https://riyad-x.github.io/Quiz-App/">Try it here!</a></p>
+<p>🔗 <strong>Live Demo</strong>: <a href="https://riyad899.github.io/Quiz-App/">Try it here!</a></p>
 
 <hr>
 
